@@ -170,3 +170,29 @@ nav li:hover{
     font-size: 16px;
     font-weight: 400;
 }
+/* Media Queries for Mobile Devices
+-------------------------------------- */
+@media only screen and (max-width:688px) {
+    .menu-and-banner{
+        width:100px;
+    }
+    .banner-elements .Players-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        flex-direction: column;  
+    }
+}
+/* for tablet devices */
+@media only screen and (min-width:688px)and (max-width:992px){
+    .menu-and-banner{
+        width:100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player{
+        flex-direction: column;  
+    }
+    
+}
